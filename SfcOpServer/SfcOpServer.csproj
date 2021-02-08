@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+
+		<Authors>Carlos Manuel Ferreira dos Santos</Authors>
+		<Company>D4v1ks</Company>
+		<Copyright>Carlos Santos (C) 2020-2021</Copyright>
+		<StartupObject>SfcOpServer.Program</StartupObject>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+		<Version>1.0.0.10</Version>
+		<AssemblyVersion>1.0.0.10</AssemblyVersion>
+		<FileVersion>1.0.0.10</FileVersion>
+		<RepositoryUrl>https://github.com/D4v1ks/SfcOpServer</RepositoryUrl>
+		<Product />
+		<PackageTags></PackageTags>
+		<Description>A 'Starfleet Command 2 - Orion Pirates' compatible server, with all the services required for it to run as a standalone application.</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DefineConstants>DEBUG;VERBOSE</DefineConstants>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<Optimize>false</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<Optimize>false</Optimize>
+	</PropertyGroup>
+
+</Project>
